@@ -9,28 +9,16 @@ export class SigninComponent implements OnInit {
 
   constructor() { }
 
-  name=""
   email=""
-  age=""
-  mobno=""
-  gender=""
-  pincode=""
-  parent_name=""
   password=""
-  confirmpassword=""
+  
 
 
   readValues=()=>{
     let data={
-      "name":this.name,
-      "email":this.email,
-      "age":this.age,
-      "mobno":this.mobno,
-      "gender":this.gender,
-      "pincode":this.pincode,
-      "parent_name":this.parent_name,
-      "password":this.password,
-      "confirmpassword":this.confirmpassword
+      "name":this.email,
+    
+      "password":this.password
     }
 
     console.log(data)
